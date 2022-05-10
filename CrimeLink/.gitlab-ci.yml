@@ -1,0 +1,10 @@
+image: node:current-bullseye
+
+stages:
+  -setup
+  -test
+
+install:
+  stage: setup
+  script:
+    - npm ci
